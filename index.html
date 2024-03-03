@@ -27,6 +27,7 @@
           <img src="public/Profile_100x100.webp" alt="profile"/>
         </div>
       </ul>
+      <img id="hamburger" src="public/icons/hamburger.svg" height="40px"/>
     </nav>
   </header>
   <main>
@@ -38,9 +39,30 @@
         <h3 class="font-base-400">Articles</h3>
         <div id="article-list">
           <div class="aside-content-wrapper">
-            <img src="public/thumnail.webp" height="80px">
+            <img class="thumnail-img" src="public/thumnail.webp" class="thumnail-img">
             <div>
-              <h4>Bangkit Academy 2024</h4>
+              <h4>Python - Variabel</h4>
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="aside-content-wrapper">
+            <img class="thumnail-img" src="public/thumnail.webp" class="thumnail-img">
+            <div>
+              <h4>FrontEnd Developer - useState</h4>
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="aside-content-wrapper">
+            <img class="thumnail-img" src="public/thumnail.webp" class="thumnail-img">
+            <div>
+              <h4>FrontEnd Developer - Forms</h4>
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="aside-content-wrapper">
+            <img src="public/thumnail.webp" class="thumnail-img">
+            <div>
+              <h4>Python - Pandas</h4>
               <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
           </div>
@@ -67,11 +89,11 @@
             </p>
             <div class="code-block">
               <code>
-  <pre>
-  <span class="prec">for</span> i := 0; i <pre 5; i++ {
-    <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
-  }
-  </pre>
+<pre>
+<span class="prec">for</span> i := 0; i < 5; i++ {
+  <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
+}
+</pre>
               </code>
             </div>
             <p class="font-base">
@@ -93,13 +115,13 @@
             </p>
             <div class="code-block">
               <code type="block">
-  <pre>
-  i := 0
-  <span class="prec">for</span> i <pre 3 {
-    <span class="prec">fmt</span>.Println(<span class="str">"Halo dunia!"</span>)
-    i++
-  }
-  </pre>
+<pre>
+i := 0
+<span class="prec">for</span> i < 3 {
+  <span class="prec">fmt</span>.Println(<span class="str">"Halo dunia!"</span>)
+  i++
+}
+</pre>
               </code>
             </div>
             <div>
@@ -117,19 +139,64 @@
             </p>
             <div class="code-block">
               <code>
-  <pre>
-  i := 0
-  <span class="prec">for</span> {
-    <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
-    i++
-  }
-  </pre>
+<pre>
+i := 0
+<span class="prec">for</span> {
+  <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
+  i++
+}
+</pre>
               </code>
             </div>
           </section>
         </article>
+        <section style="padding-top: 50px; padding-bottom: 50px;">
+          <h1 class="font-title">Comments</h1>
+          <div id="comment-section"></div>
+          <form id="comment-form">
+            <h2 class="font-base-400" style="margin: 0">Add your comment</h2>
+            <div>
+              <label class="font-base">Name:</label>
+              <input type="text" id="name-input"/>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <label class="font-base">Comment:</label>
+              <textarea id="text-field" ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
       </div>
     </div>
+    <section name="side-article-mobile">
+      <h3 class="font-base-400">Other Articles</h3>
+      <div id="article-list">
+        <div class="aside-content-wrapper">
+          <div>
+            <h4>Python - Variabel</h4>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="aside-content-wrapper">
+          <div>
+            <h4>FrontEnd Developer - useState</h4>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="aside-content-wrapper">
+          <div>
+            <h4>FrontEnd Developer - Forms</h4>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="aside-content-wrapper">
+          <div>
+            <h4>Python - Pandas</h4>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div name="wrapper">
@@ -144,12 +211,13 @@
         <img src="public/icons/github.svg" height="40px"/>
       </a>
       <a href="https://linkedin.com/in/petrusariaa" target="_blank">
-        <img src="public/icons/github.svg" height="40px"/>
+        <img src="public/icons/linkedin.svg" height="35px"/>
       </a>
       <a href="https://instagram.com/petrusaria25" target="_blank">
-        <img src="public/icons/github.svg" height="40px"/>
+        <img src="public/icons/insta.svg" height="40px"/>
       </a>
     </div>
   </footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

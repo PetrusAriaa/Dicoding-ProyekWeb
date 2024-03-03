@@ -59,6 +59,7 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0px 2px 5px lightblue;
+  z-index: 99;
 }
 
 nav {
@@ -208,10 +209,27 @@ footer div[name="wrapper"] {
   margin: 8px 0 8px 0;
 }
 
+#article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
 .aside-content-wrapper{
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.aside-content-wrapper:hover {
+  background-color: #e5e5e5;
+}
+
+.aside-content-wrapper div {
+  width: 100%;
 }
 
 .aside-content-wrapper div h4 {
@@ -221,6 +239,11 @@ footer div[name="wrapper"] {
   font-variation-settings: "slnt" 0;
   color: #2d3863;
   margin: 0;
+  width: 70%;
+  min-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .aside-content-wrapper div p {
@@ -229,9 +252,89 @@ footer div[name="wrapper"] {
   font-style: normal;
   font-size: 14px;
   color: #9a9fb2;
-  width: 75%;
+  width: 65%;
   max-width: 200px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.thumnail-img {
+  height: 80px;
+}
+
+#content {
+  position: relative;
+}
+
+aside {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+section[name="side-article-mobile"] {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+#comment-form {
+  margin-top: 50px;
+  margin: 0;
+  width: 75%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .thumnail-img {
+    height: 50px;
+    display: none;
+  }
+
+  #article-wrapper article {
+    margin: 0;
+    width: 90%;
+  }
+
+  .content-image {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  aside {
+    display: none;
+  }
+
+  #article-wrapper {
+    margin: 0;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+
+  #article-wrapper article {
+    margin: 0;
+    width: 100%;
+  }
+
+  section[name="side-article-mobile"] {
+    display: block;
+    padding: 0 20px 0 20px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #comment-form {
+    width: 100%;
+  }
+
 }
