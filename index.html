@@ -27,101 +27,129 @@
           <img src="public/Profile_100x100.webp" alt="profile"/>
         </div>
       </ul>
-      <!-- <a href="#">Profile</a> -->
     </nav>
   </header>
   <main>
-    <div name="breadcrumps">
-      Learn > Golang > Perulangan
+    <div name="breadcrumbs" class="font-base">
+      <a href="#">Learn</a> > <a href="#">Golang</a> > Perulangan
     </div>
-    <div>
+    <div id="content">
       <aside>
+        <h3 class="font-base-400">Articles</h3>
+        <div id="article-list">
+          <div class="aside-content-wrapper">
+            <img src="public/thumnail.webp" height="80px">
+            <div>
+              <h4>Bangkit Academy 2024</h4>
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
       </aside>
-      <article>
-        <h1 class="font-title">Belajar Golang - Perulangan</h1>
-        <p class="font-base">
-          Perulangan pada pemrograman adalah logika yang dilakukan dengan 
-          eksekusi blok kode secara berulang selama memenuhi kondisi tertentu.
-        </p>
-        <p class="font-base">
-          Berbeda dengan bahasa pemrograman lain seperti JavaScript atau C++ yang
-          memiliki perulangan <code type="inline">for</code> dan <code type="inline">while</code>, Golang hanya
-          memiliki perulangan <code type="inline">for</code>. Meski demikian <code type="inline">for</code> pada
-          Golang memiliki kemampuan sebagaimana <code type="inline">while</code> dan <code type="inline">forEach</code>.
-        </p>
-        <section>
-          <h2 class="font-title">Perulangan <code type="inline">for</code></h2>
+      <div id="article-wrapper">
+        <article>
+          <h1 class="font-title">Belajar Golang - Perulangan</h1>
           <p class="font-base">
-            Cara pertama dengan memasukkan variabel counter, kondisi, dan iteratornya. Coba perhatikan dan praktekan
-            kode berikut.
-          </p>
-          <div class="code-block">
-            <code>
-<pre>
-<span class="prec">for</span> i := 0; i < 5; i++ {
-  <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
-}
-</pre>
-            </code>
-          </div>
-          <p class="font-base">
-            Kode tersebut akan menjalankan perulangan dengan titik awal 
-            <code type="inline">i</code> bernilai <code type="inline">0</code>. Jika nilai <code type="inline">i</code> lebih kecil
-            <code type="inline">5</code>, kode <code type="inline">fmt.Println("counter =", i)</code> akan dijalankan.
-            Setelah itu nilai <code type="inline">i</code> akan ditambahkan <code type="inline">1</code>. Begitu seterusnya
-            hingga <code type="inline">i</code> tidak lagi memenuhi kondisi <code type="inline">i < 5</code>.
-          </p>
-          <div>
-            <img src="public/img-looping-1.png" alt="result" title="img-looping-1.png">
-          </div>
-        </section>
-        <section>
-          <h2 class="font-title">Perulangan <code type="inline">for</code> dengan Argumen Hanya Kondisi</h2>
-          <p class="font-base">
-            Cara berikutnya adalah dengan menuliskan kondisi setelah keyword <code type="inline">for</code> tanpa
-            inisiasi variabel counter terlebih dahulu. Cara ini merupakan bentuk <code type="inline">while</code>
-          </p>
-          <div class="code-block">
-            <code type="block">
-<pre>
-i := 0
-<span class="prec">for</span> i < 3 {
-  <span class="prec">fmt</span>.Println(<span class="str">"Halo dunia!"</span>)
-  i++
-}
-</pre>
-            </code>
-          </div>
-          <div>
-            <img src="public/img-looping-2.png" alt="result" title="img-looping-1.png">
-          </div>
-        </section>
-        <section>
-          <h2 class="font-title">Perulangan <code type="inline">for</code> tanpa Argumen</h2>
-          <p class="font-base">
-            Kemudian adalah dengan menuliskan <code type="inline">for</code> tanpa kondisi
-            yang membatasi penjalanan blok kode di bawahnya.
+            Perulangan pada pemrograman adalah logika yang dilakukan dengan 
+            eksekusi blok kode secara berulang selama memenuhi kondisi tertentu.
           </p>
           <p class="font-base">
-            Bentuk ini merupakan cara Golang membuat infinite loop seperti <code type="inline">while True</code>.
+            Berbeda dengan bahasa pemrograman lain seperti JavaScript atau C++ yang
+            memiliki perulangan <code type="inline">for</code> dan <code type="inline">while</code>, Golang hanya
+            memiliki perulangan <code type="inline">for</code>. Meski demikian <code type="inline">for</code> pada
+            Golang memiliki kemampuan sebagaimana <code type="inline">while</code> dan <code type="inline">forEach</code>.
           </p>
-          <div class="code-block">
-            <code>
-<pre>
-i := 0
-<span class="prec">for</span> {
-  <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
-  i++
-}
-</pre>
-            </code>
-          </div>
-        </section>
-      </article>
+          <section>
+            <h2 class="font-title">Perulangan <code type="inline">for</code></h2>
+            <p class="font-base">
+              Cara pertama dengan memasukkan variabel counter, kondisi, dan iteratornya. Coba perhatikan dan praktekan
+              kode berikut.
+            </p>
+            <div class="code-block">
+              <code>
+  <pre>
+  <span class="prec">for</span> i := 0; i <pre 5; i++ {
+    <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
+  }
+  </pre>
+              </code>
+            </div>
+            <p class="font-base">
+              Kode tersebut akan menjalankan perulangan dengan titik awal 
+              <code type="inline">i</code> bernilai <code type="inline">0</code>. Jika nilai <code type="inline">i</code> lebih kecil
+              <code type="inline">5</code>, kode <code type="inline">fmt.Println("counter =", i)</code> akan dijalankan.
+              Setelah itu nilai <code type="inline">i</code> akan ditambahkan <code type="inline">1</code>. Begitu seterusnya
+              hingga <code type="inline">i</code> tidak lagi memenuhi kondisi <code type="inline">i < 5</code>.
+            </p>
+            <div>
+              <img class="content-image" src="public/img-looping-1.png" alt="result" title="img-looping-1.png">
+            </div>
+          </section>
+          <section>
+            <h2 class="font-title">Perulangan <code type="inline">for</code> dengan Argumen Hanya Kondisi</h2>
+            <p class="font-base">
+              Cara berikutnya adalah dengan menuliskan kondisi setelah keyword <code type="inline">for</code> tanpa
+              inisiasi variabel counter terlebih dahulu. Cara ini merupakan bentuk <code type="inline">while</code>
+            </p>
+            <div class="code-block">
+              <code type="block">
+  <pre>
+  i := 0
+  <span class="prec">for</span> i <pre 3 {
+    <span class="prec">fmt</span>.Println(<span class="str">"Halo dunia!"</span>)
+    i++
+  }
+  </pre>
+              </code>
+            </div>
+            <div>
+              <img class="content-image" src="public/img-looping-2.png" alt="result" title="img-looping-1.png">
+            </div>
+          </section>
+          <section>
+            <h2 class="font-title">Perulangan <code type="inline">for</code> tanpa Argumen</h2>
+            <p class="font-base">
+              Kemudian adalah dengan menuliskan <code type="inline">for</code> tanpa kondisi
+              yang membatasi penjalanan blok kode di bawahnya.
+            </p>
+            <p class="font-base">
+              Bentuk ini merupakan cara Golang membuat infinite loop seperti <code type="inline">while True</code>.
+            </p>
+            <div class="code-block">
+              <code>
+  <pre>
+  i := 0
+  <span class="prec">for</span> {
+    <span class="prec">fmt</span>.Println(<span class="str">"counter ="</span>, i)
+    i++
+  }
+  </pre>
+              </code>
+            </div>
+          </section>
+        </article>
+      </div>
     </div>
   </main>
   <footer>
-
+    <div name="wrapper">
+      <div class="author">
+        <h1 class="font-title-2">NextDay Dev</h1>
+        <p class="font-base-300">Petrus Aria Chevalier Rambing</p>
+        <p class="font-base-300">petrusariac25@gmail.com</p>
+      </div>
+    </div>
+    <div id="socials">
+      <a href="https://github.com/PetrusAriaa" target="_blank">
+        <img src="public/icons/github.svg" height="40px"/>
+      </a>
+      <a href="https://linkedin.com/in/petrusariaa" target="_blank">
+        <img src="public/icons/github.svg" height="40px"/>
+      </a>
+      <a href="https://instagram.com/petrusaria25" target="_blank">
+        <img src="public/icons/github.svg" height="40px"/>
+      </a>
+    </div>
   </footer>
 </body>
 </html>
